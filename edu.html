@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational landing page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Slab:wght@300;400;600;700&display=swap&display=swap"
+        rel="stylesheet">
+    <style>
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+
+        /* HTML5 display-role reset for older browsers */
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
+        }
+
+        body {
+            line-height: 1;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        blockquote,
+        q {
+            quotes: none;
+        }
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
+            content: '';
+            content: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .body {
+            font-family: 'Roboto Slab', serif;
+        }
+
+        /* em is a relative unit in css borrowed from the printing industry
+        it is a multiplier factor relative to the size defined in the parent container:
+        therefore the more nested your element, effects compound. 
+        rem on the other hand is em but relative to the root.
+        Thus no matter how nested your elements are, the sizes defined using rem
+        is relative to those defined at the root element.
+         */
+        .container {
+            display: grid;
+            grid-gap: 1em;
+            justify-content: center;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-areas:
+                "header header header"
+                ". content ."
+                "footer footer footer"
+            ;
+        }
+
+        .container>*:nth-child(even) {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .container>*:nth-child(odd) {
+            background: #ddd;
+            padding: 1em;
+        }
+
+        .header {
+            grid-area: header;
+            display: grid;
+            grid-template-areas: "header1 header2 header3";
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        .logo {
+            grid-area: header2;
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        .main {
+            grid-area: content;
+            display: grid;
+            grid-gap: 1rem;
+            grid-column: 2/2;
+            grid-row: 2/2;
+        }
+
+        .main>*:nth-child(even) {
+            background: #ccc;
+            padding: 1em;
+        }
+
+        .main>*:nth-child(odd) {
+            background: #eff;
+            padding: 1em;
+        }
+
+        .footer {
+            grid-area: footer;
+            display: grid;
+            grid-template-areas: "footer1 footer2 footer3";
+            grid-template-columns: 1fr 3fr 1fr;
+        }
+
+        .footer-content {
+            grid-area: footer2;
+        }
+
+        .section {
+            border-radius: 0.8rem;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <header class="header">
+        <div class="logo">Logo</div>
+    </header>
+    <main class="main">
+        <div class="section section1">
+            <div class="section-title"> Mollit sint commodo Lorem...</div>
+            Ullamco consequat officia sunt fugiat. Cillum cillum duis ipsum consequat Lorem esse ut qui. Pariatur tempor
+            mollit mollit veniam irure fugiat reprehenderit eu sint consectetur cupidatat minim. Cupidatat et magna sint
+            aute. Deserunt nostrud est fugiat tempor consectetur qui tempor sit tempor dolore duis. Id fugiat eiusmod
+            aute ipsum sint ex aliquip officia nulla labore.
+        </div>
+        <div class="section section2">
+            Eiusmod ipsum amet esse culpa ut do. Sint Lorem anim labore non reprehenderit mollit. Tempor ea eiusmod esse
+            elit officia irure id duis proident. Ullamco elit ad in enim reprehenderit nulla non.
+        </div>
+        <div class="section section3">
+            Velit quis elit sit ullamco deserunt minim deserunt elit eu proident magna sint. Culpa enim aliquip
+            reprehenderit duis mollit velit exercitation tempor amet ad incididunt ullamco fugiat commodo. Est labore
+            aliqua aliqua laboris voluptate labore adipisicing. Enim deserunt ullamco sint mollit. Aute in mollit
+            adipisicing officia tempor labore in irure pariatur deserunt.
+        </div>
+        <div class="section section4">
+            Aliquip nisi mollit culpa minim irure excepteur sunt commodo minim tempor. Veniam est consequat exercitation
+            voluptate mollit est est eu incididunt. Esse reprehenderit exercitation incididunt nostrud eu occaecat
+            tempor in. Exercitation officia veniam id nulla.
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <h4>legal stuff</h4>
+            <p>Duis nisi officia incididunt id est excepteur nulla et veniam excepteur non labore reprehenderit.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
